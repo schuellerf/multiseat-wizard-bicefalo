@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>Layer 1</title>
+  <ellipse ry="64" rx="22" id="svg_7" cy="164" cx="150" stroke-width="3" stroke="#000000" fill="#007fff"/>
+  <ellipse ry="10" rx="14" id="svg_8" cy="276" cx="105" stroke-width="3" stroke="#000000" fill="#007fff"/>
+  <ellipse id="svg_9" ry="10" rx="14" cy="266" cx="205" stroke-width="3" stroke="#000000" fill="#007fff"/>
+  <line id="svg_10" y2="211.000003" x2="127.999996" y1="262.000002" x1="112.999996" stroke-width="3" stroke="#000000" fill="none"/>
+  <line id="svg_11" y2="251.999996" x2="197" y1="211.999997" x1="172" stroke-width="3" stroke="#000000" fill="none"/>
+  <ellipse transform="rotate(-34.6952, 202, 112)" ry="11" rx="36" id="svg_12" cy="112" cx="202" stroke-width="3" stroke="#000000" fill="#007fff"/>
+  <ellipse id="svg_13" transform="rotate(23.3045, 93.5352, 120.438)" ry="9.14373" rx="36" cy="120.43799" cx="93.533978" stroke-width="3" stroke="#000000" fill="#007fff"/>
+  <g id="svg_17">
+   <circle id="svg_14" r="35.511719" cy="44" cx="101" stroke-width="3" stroke="#000000" fill="#007fff"/>
+   <circle id="svg_15" r="6.707031" cy="31" cx="90" stroke-width="3" stroke="#000000" fill="#ffffff"/>
+   <circle id="svg_16" r="6.324219" cy="34" cx="113" stroke-width="3" stroke="#000000" fill="#ffffff"/>
+  </g>
+  <g id="svg_18">
+   <circle id="svg_19" r="35.511719" cy="42" cx="194" stroke-width="3" stroke="#000000" fill="#007fff"/>
+   <circle id="svg_20" r="6.707031" cy="29" cx="183" stroke-width="3" stroke="#000000" fill="#ffffff"/>
+   <circle id="svg_21" r="6.324219" cy="32" cx="206" stroke-width="3" stroke="#000000" fill="#ffffff"/>
+  </g>
+  <line id="svg_22" y2="99" x2="138" y1="77" x1="121" stroke-width="3" stroke="#000000" fill="none"/>
+  <line id="svg_23" y2="97" x2="160" y1="75" x1="176" stroke-width="3" stroke="#000000" fill="none"/>
+ </g>
+</svg>
