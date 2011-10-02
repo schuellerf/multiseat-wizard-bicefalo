@@ -51,5 +51,7 @@ http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/us
 http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/login-multiseat-marcado.jpg
 
   * Multiseat will start, be patience.
-  * User seat1, password seat1. User seat2, password seat2.
+  * User seat1, password seat1. User seat2, password seat2...
   * That's all.
+
+In order to shut down a multiseat computer. Close all seats sessions and press physical power off buttom (only one click). Computer will shut down normally.
