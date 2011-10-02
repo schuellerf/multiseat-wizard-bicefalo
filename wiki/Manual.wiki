@@ -27,14 +27,19 @@ It uses Xephyr in order to get multiseat. Then it is focused to one video card m
 
 http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/Pantallazo.png
 
+Assistant should detect number of screens (seats) connected:
+
 http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/Pantallazo-1.png
 
+Select resolution of each screen:
 
 http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/Pantallazo-2.png
 
+Select keyboard and mouse for each seat. Suggestion, press next:
 
 http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/Pantallazo-3.png
 
+Connect a pendrive in each USB port and press refresh. Select a seat and use add to add this USB port to this seat: 
 
 http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/Pantallazo-4.png
 
