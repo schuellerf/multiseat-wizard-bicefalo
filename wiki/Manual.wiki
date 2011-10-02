@@ -39,7 +39,7 @@ Select keyboard and mouse for each seat. Suggestion, press next:
 
 http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/Pantallazo-3.png
 
-Connect a pendrive in each USB port and press refresh. Select a seat and use add to add this USB port to this seat: 
+Connect a pendrive in each USB port (or same pendrive several times) and press refresh. Select a seat and use add to add this USB port to this seat: 
 
 http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/Pantallazo-4.png
 
