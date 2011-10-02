@@ -1,4 +1,3 @@
-
 = Introduction =
 
 This is a simple wizard to install multiseat systems. A multiseat refers to multiple users using one personal computer, each with their own console, consisting of a keyboard, a mouse and a monitor.
@@ -22,7 +21,7 @@ It uses Xephyr in order to get multiseat. Then it is focused to one video card m
   * Connect your hardware, screens, keyboards and mices. Reboot your computer.
   * Then run this asistant from your terminal:
 
-sudo python main.py
+{{{sudo python main.py}}}
 
   * Follow asistant:
 
