@@ -17,6 +17,7 @@ It uses Xephyr in order to get multiseat. Then it is focused to one video card m
 
 = Install =
 
+  * Install Ubuntu in your computer. Ubuntu, neither Kubuntu nor Lubuntu.
   * Download this wizard from http://code.google.com/p/multiseat-wizard-bicefalo/downloads/list
   * Connect your hardware, screens, keyboards and mices. Reboot your computer.
   * Then run this asistant from your terminal:
