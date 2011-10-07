@@ -18,8 +18,8 @@ Se usa Xephyr para conseguir el multiterminal. Por lo tanto este asistente se or
 
   * Instala Ubuntu en tu equipo. Ubuntu, ni Kubuntu ni Lubuntu.
   * Descarga el asistente desde http://code.google.com/p/multiseat-wizard-bicefalo/downloads/list
-  * Conecta todos las pantallas, teclados y ratones que se vayan a usar. Reinicia el equipo.
-  * Ejecuta el asistente desde un terminal:
+  * Conecta todas las pantallas, teclados y ratones que se vayan a usar. Reinicia el equipo.
+  * Ejecuta el asistente desde un terminal tecleando:
 
 {{{sudo python main.py}}}
 
