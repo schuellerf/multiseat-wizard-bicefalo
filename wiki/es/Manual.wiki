@@ -1,8 +1,8 @@
 = Introducción =
 
-Este programa es un sencillo asistente que sirve para instalar equipos multisitio (multiseat). Un multisitio consiste en colocar a varios usuarios en el mismo equipo, cada uno con su monitor, teclado y ratón.
+Este programa es un sencillo asistente que sirve para instalar equipos multiterminal (multiseat). Un multiterminal consiste en colocar a varios usuarios en el mismo equipo, cada uno con su monitor, teclado y ratón.
 
-En el siguiente enlace se puede ver un ejemplo de multisitio:
+En el siguiente enlace se puede ver un ejemplo de multiterminal:
 
 http://en.wikipedia.org/wiki/Multiseat_configuration
 
@@ -12,7 +12,7 @@ Este asistente permite configurar:
   * El teclado y el ratón que va a usar cada puesto de trabajo
   * Los puertos USB que puede usar cada puesto de trabajo
 
-Se usa Xephyr para conseguir el multisitio. Por lo tanto este asistente se orienta a equipos con una sola tarjeta de vídeo con dos o más salidas.
+Se usa Xephyr para conseguir el multiterminal. Por lo tanto este asistente se orienta a equipos con una sola tarjeta de vídeo con dos o más salidas.
 
 = Instalación =
 
@@ -50,8 +50,8 @@ http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/us
 
 http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/login-multiseat-marcado.jpg
 
-  * El multisitio comenzará, sea peaciente.
+  * El multiterminal comenzará, sea peaciente.
   * Usuario seat1, contraseña seat1. Usuario seat2, contraseña seat2...
   * Eso es todo.
 
-Para apagar un equipo con el multisitio activado: Cierre todas las sesiones activas y presione el botón de apagar (el botón físico) una vez. El equipo se apagará normalmente.
+Para apagar un equipo con el multiterminal activado: Cierre todas las sesiones activas y presione el botón de apagar (el botón físico) una vez. El equipo se apagará normalmente.
