@@ -14,7 +14,7 @@ Este asistente permite configurar:
 
 Se usa Xephyr para conseguir el multiterminal. Por lo tanto este asistente se orienta a equipos con una sola tarjeta de vídeo con dos o más salidas. Ver el apartado de hardware:
 
-http://code.google.com/p/multiseat-wizard-bicefalo/wiki/es/Hardware.wiki
+http://code.google.com/p/multiseat-wizard-bicefalo/wiki/es/Hardware
 
 = Instalación =
 
