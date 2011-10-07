@@ -29,3 +29,10 @@ Cuidado con los conectores HDMI a VGA:
 http://multiseat-wizard-bicefalo.googlecode.com/svn/wiki/images/cablevgahdmi.jpg
 
 El formato HDMI es digital y el VGA es analógico, por lo tanto son incompatibles. Un cable como el anterior no funcionará. Sí existen proyectores que pueden funcionar con cables de este tipo, pero no es lo habitual. Mucho cuidado con esto.
+
+*Muy importante:* Aunque la tarjeta de vídeo tenga tres salidas, eso no quiere decir que pueda funcionar con tres monitores a la vez. Habrá que leerse manual de la tarjeta de vídeo para ver cuantas de estas salidas se pueden usar a la vez (aunque la mayoría soporta dos sin problemas).
+
+Muchos equipos nuevos ya vienen con dos salidas de vídeo incorporadas, sólo hay que investigarlas bien:
+
+http://multiseat-wizard-bicefalo.googlecode.com/svn/wiki/images/Conectores-placa.jpg
+
