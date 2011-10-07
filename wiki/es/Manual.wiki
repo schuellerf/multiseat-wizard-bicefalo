@@ -1,0 +1,57 @@
+= Introducción =
+
+Este programa es un sencillo asistente que sirve para instalar equipos multisitio (multiseat). Un multisitio consiste en colocar a varios usuarios en el mismo equipo, cada uno con su monitor, teclado y ratón.
+
+En el siguiente enlace se puede ver un ejemplo de multisitio:
+
+http://en.wikipedia.org/wiki/Multiseat_configuration
+
+Este asistente permite configurar:
+
+  * La resolución de la pantalla
+  * El teclado y el ratón que va a usar cada puesto de trabajo
+  * Los puertos USB que puede usar cada puesto de trabajo
+
+Se usa Xephyr para conseguir el multisitio. Por lo tanto este asistente se orienta a equipos con una sola tarjeta de vídeo con dos o más salidas.
+
+= Instalación =
+
+  * Instala Ubuntu en tu equipo. Ubuntu, ni Kubuntu ni Lubuntu.
+  * Descarga el asistente desde http://code.google.com/p/multiseat-wizard-bicefalo/downloads/list
+  * Conecta todos las pantallas, teclados y ratones que se vayan a usar. Reinicia el equipo.
+  * Ejecuta el asistente desde un terminal:
+
+{{{sudo python main.py}}}
+
+  * Sigue el asistente:
+
+http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/Pantallazo.png
+
+El asistente debería detectar en número de pantallas (puestos de trabajo) conectados:
+
+http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/Pantallazo-1.png
+
+Seleciona la resolución de cada pantalla:
+
+http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/Pantallazo-2.png
+
+Selecciona el ratón y el teclado que le corresponde a cada puesto de trabajo (seat). Sugerencia, pulsa siguiente y después coloca manualmente cada puesto:
+
+http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/Pantallazo-3.png
+
+Conecta un pendrive en cada puerto USB (o repítelo varias veces con el mismo pendrive) y presiona actualizar. Selecciona cada puesto de trabajo (seat) y un puerto USB, entonces usa el botón añadir para añadir dicho puerto a ese puesto:
+
+http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/Pantallazo-4.png
+
+http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/usb-ports.png
+
+  * Finalmente presiona aplicar y reinicia el equipo.
+  * Habrá un nuevo usuario, multiseat. Selecciona al usuario multiseat con la contraseña multiseat. Selecciona también la sesión Multiseat:
+
+http://multiseat-wizard-bicefalo.googlecode.com/svn/trunk/trunk/manual/images/login-multiseat-marcado.jpg
+
+  * El multisitio comenzará, sea peaciente.
+  * Usuario seat1, contraseña seat1. Usuario seat2, contraseña seat2...
+  * Eso es todo.
+
+Para apagar un equipo con el multisitio activado: Cierre todas las sesiones activas y presione el botón de apagar (el botón físico) una vez. El equipo se apagará normalmente.
