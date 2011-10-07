@@ -17,3 +17,15 @@ Se necesita una tarjeta de vídeo con dos o más salidas que funcione con los co
 Las tarjetas de vídeo actuales ya suelen venir con varias salidas:
 
 http://multiseat-wizard-bicefalo.googlecode.com/svn/wiki/images/Conectores.jpg
+
+Los más habitual es que tengan un puerto VGA y otro que puede ser HDMI o DVI. Si se posee un monitor que soporte estas entradas, sólo hay que conectar un monitor en la salida VGA y otro en la DVI o HDMI (siempre que soporten estas salidas).
+
+Si sólo se tienen monitores VGA, existen adaptadores de DVI a VGA:
+
+http://multiseat-wizard-bicefalo.googlecode.com/svn/wiki/images/DVItoVGA.jpg
+
+Cuidado con los conectores HDMI a VGA:
+
+http://multiseat-wizard-bicefalo.googlecode.com/svn/wiki/images/cablevgahdmi.jpg
+
+El formato HDMI es digital y el VGA es analógico, por lo tanto son incompatibles. Un cable como el anterior no funcionará. Sí existen proyectores que pueden funcionar con cables de este tipo, pero no es lo habitual. Mucho cuidado con esto.
