@@ -1,0 +1,19 @@
+= Hardware =
+
+Entre los recursos necesarios para ejecutar correctamente una máquina con multiterminal configurada con este asistente se necesita:
+  * Una tarjeta de vídeo con dos o más salidas que funcione con los controladores libres de Linux.
+
+Sería deseable que:
+  * Se tuviese un procesador con varios núcleos.
+  * Mucha memoria RAM y disco duro
+Aunque esto dependerá de lo que se desee hacer. Para ejecutar un procesador de textos, basta con cualquier tipo de equipo.
+
+Un truco sencillo para saber si tu hardware va a funcionar correctamente para tus propósitos es abrir varias sesiones de los programas que se vayan a usar, tantas sesiones como usuarios se deseen poner. Si el equipo lo aguanta, sí es posible.
+
+= Las tarjetas de vídeo =
+
+Se necesita una tarjeta de vídeo con dos o más salidas que funcione con los controladores libres de Linux. Los controladores propietarios muy a menudo cambian el comportamiento del programa xranrd, necesario para configurar correctamente la resolución de los monitores.
+
+Las tarjetas de vídeo actuales ya suelen venir con varias salidas:
+
+http://multiseat-wizard-bicefalo.googlecode.com/svn/wiki/images/Conectores.jpg
