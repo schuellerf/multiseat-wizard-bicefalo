@@ -30,6 +30,7 @@ from terminal import *
 from monitores_gui import *
 from mouse_keyboard import *
 from usb import *
+from read_keyboard_config import *
 
 class MainGUI:
 
@@ -123,9 +124,9 @@ runscreen () {{
 	# $5 x
 	# $6 y
 	
-	#xkb='xkbrules=xorg,xkbmodel=evdev,xkblayout=es'
 	# Se prueba con la configuración de evdev en lugar de la de xorg
-	xkb='xkbrules=evdev,xkbmodel=pc105,xkblayout=es'
+	xkb='xkbrules=xorg,xkbmodel=evdev,xkblayout={layout}'
+	#xkb='xkbrules=evdev,xkbmodel=pc105,xkblayout=es'
 
 	title="Escritorio Xephyr $1 `date -R`"
 	xmessage -title "$title" -geometry $2+$5+$6 "$title" &
@@ -150,7 +151,7 @@ metacity &
 
 sleep 5
 
-		""".format(main=sys.argv[0])
+		""".format(main=sys.argv[0], layout=read_keyboard_config())
 		number_of_seats=0
 		try:
 			number_of_seats=int(self.number_of_seats_entry.get_text())
