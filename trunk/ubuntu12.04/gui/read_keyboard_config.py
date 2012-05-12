@@ -19,16 +19,25 @@
 import subprocess
 
 def read_keyboard_config():
+	layout=None
+	model=None
+	rules=None
 	process = subprocess.Popen(["setxkbmap", "-query"], stdout=subprocess.PIPE)
 	config=process.stdout.readlines()
 	process.stdout.close()
-	if len(config)>2:
-		line=config[2].strip().split()
+	for item in config:
+		line=item.strip().split()
 		if line[0]=='layout:':
-			return line[1]
+			layout=line[1]
+		elif line[0]=='model:':
+			model=line[1]
+		elif line[0]=='rules:':
+			rules=line[1]
+	return layout, model, rules
 	#print config
 
 # If the program is run directly or passed as an argument to the python
 # interpreter then create a HelloWorld instance and show it
 if __name__ == "__main__":
-	print read_keyboard_config()
+	layout, model, rules=read_keyboard_config()
+	print layout, model, rules

@@ -26,7 +26,7 @@ import os
 import sys
 import os.path
 
-from terminal import *
+#from terminal import *
 from monitores_gui import *
 from mouse_keyboard import *
 from usb import *
@@ -105,6 +105,7 @@ class MainGUI:
 		return model[active][0]
 
 	def build_shell_script(self):
+		layout, model, rules=read_keyboard_config()
 		shell="""#!/bin/bash
 
 # For some reason I was unable to set the following in xorg.conf
@@ -125,7 +126,7 @@ runscreen () {{
 	# $6 y
 	
 	# Se prueba con la configuración de evdev en lugar de la de xorg
-	xkb='xkbrules=xorg,xkbmodel=evdev,xkblayout={layout}'
+	xkb='xkbrules={rules},xkbmodel={model},xkblayout={layout}'
 	#xkb='xkbrules=evdev,xkbmodel=pc105,xkblayout=es'
 
 	title="Escritorio Xephyr $1 `date -R`"
@@ -151,7 +152,7 @@ metacity &
 
 sleep 5
 
-		""".format(main=sys.argv[0], layout=read_keyboard_config())
+		""".format(main=sys.argv[0], layout=layout, model=model, rules=rules)
 		number_of_seats=0
 		try:
 			number_of_seats=int(self.number_of_seats_entry.get_text())
@@ -345,8 +346,8 @@ cat <<EOF > /home/multiseat/sesion.sh
 #Se configura el mapa del teclado
 export `dbus-launch`
 # No es necesaria la siguiente línea si el mapa del teclado cargado en Xephyr, es el correcto, se comenta
-xterm -e 'xmodmap /home/multiseat/teclado.txt'
-icewm-session &
+#xterm -e 'xmodmap /home/multiseat/teclado.txt'
+gnome-session --session=ubuntu-2d
 EOF
 
 chown multiseat:multiseat /home/multiseat/sesion.sh
@@ -369,7 +370,7 @@ chmod +r /home/multiseat/teclado.txt
 			user='seat{0}'.format(n_user)
 			mkdir_file+='mkdir /home/{usuario}/usbdrive\nchown {usuario}:root /home/{usuario}/usbdrive\n'.format(usuario=user)
 			for usb in usbs:
-				udev_file+='SUBSYSTEMS=="usb", DRIVERS=="usb", DEVPATH=="{puesto}*", ATTRS{{product}}=="*", SYMLINK+="multiseatusb{n}", OWNER="{usuario}"\n'.format(usuario=user,puesto=usb,n=chr(n_usb+97))
+				udev_file+='SUBSYSTEMS=="usb", DRIVERS=="usb", DEVPATH=="{puesto}*", SYMLINK+="multiseatusb{n}", OWNER="{usuario}"\n'.format(usuario=user,puesto=usb,n=chr(n_usb+97))
 				fstab_file+='/dev/multiseatusb{n} /home/{usuario}/usbdrive vfat rw,owner,noauto,group,flush,quiet,nodev,nosuid,noexec,noatime,dmask=007,fmask=117 0 0\n'.format(n=chr(n_usb+97), usuario=user)
 				n_usb+=1
 			n_user+=1
@@ -450,21 +451,21 @@ if __name__ == "__main__":
 		dialog.connect("destroy", gtk.main_quit)
 		dialog.show()
 		gtk.main()
-	elif sys.argv[1]=='--terminal':
-		commands=sys.argv[2]
-		terminal=Terminal()
-		terminal.exec_command("bash", [])
-		terminal.window.connect("delete_event", gtk.main_quit)
-		terminal.window.connect("destroy", gtk.main_quit)
-		timeout=gobject.timeout_add(1000, feed_terminal_callback, terminal, commands)
-		gtk.main()
+	#elif sys.argv[1]=='--terminal':
+	#	commands=sys.argv[2]
+	#	terminal=Terminal()
+	#	terminal.exec_command("bash", [])
+	#	terminal.window.connect("delete_event", gtk.main_quit)
+	#	terminal.window.connect("destroy", gtk.main_quit)
+	#	timeout=gobject.timeout_add(1000, feed_terminal_callback, terminal, commands)
+	#	gtk.main()
 	elif sys.argv[1]=='--user-session':
 		commands="""#!/bin/bash
-#Se configura el mapa del teclado
 export `dbus-launch`
 metacity &
-sleep 5
-xmodmap '/usr/local/share/multiseat/teclado.txt'
-bash
+#Se configura el mapa del teclado
+#sleep 5
+#xmodmap '/usr/local/share/multiseat/teclado.txt'
+gnome-session --session=ubuntu-2d
 """
 		os.system(commands)
